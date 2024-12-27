@@ -15,7 +15,7 @@ A GitHub action to get a project ID from its number.
 ## Outputs
 | Name | Description |
 | :- | :- |
-| `GITHUB_PROJECT_FIELD_ID` | The requested project field ID. |
+| `GITHUB_PROJECT_ID` | The requested project ID. |
 
 ## Permissions
 Your GitHub app installation or your personal access token must have at least the following permissions:

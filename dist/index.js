@@ -33202,7 +33202,7 @@ try {
         repositoryOwner,
         projectNumber
     });
-    _actions_core__WEBPACK_IMPORTED_MODULE_0__.setOutput("github-project-id", response.repository.projectV2.id);
+    _actions_core__WEBPACK_IMPORTED_MODULE_0__.setOutput("GITHUB_PROJECT_ID", response.repository.projectV2.id);
 }
 catch (error) {
     _actions_core__WEBPACK_IMPORTED_MODULE_0__.setFailed(error instanceof Error ? error : "Unknown error.");

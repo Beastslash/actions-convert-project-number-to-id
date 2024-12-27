@@ -50,7 +50,7 @@ try {
     projectNumber
   });
 
-  core.setOutput("github-project-id", response.repository.projectV2.id);
+  core.setOutput("GITHUB_PROJECT_ID", response.repository.projectV2.id);
 
 } catch (error) {
 

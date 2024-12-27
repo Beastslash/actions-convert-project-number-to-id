@@ -28,10 +28,8 @@ try {
 
   // Get the project ID from the number.
   const projectNumber = parseInt(core.getInput("github-project-number", {required: true}), 10);
-  const repositoryOwner = core.getInput("github-repository-owner", {required: false}) ?? github.context.repo.owner;
-  const repositoryName = core.getInput("github-repository-name", {required: false}) ?? github.context.repo.repo;
-  console.log(repositoryOwner);
-  console.log(repositoryName);
+  const repositoryOwner = core.getInput("github-repository-owner", {required: false}) || github.context.repo.owner;
+  const repositoryName = core.getInput("github-repository-name", {required: false}) || github.context.repo.repo;
   const response = await octokit.graphql<{
     repository: {
       projectV2: {

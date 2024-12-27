@@ -25,7 +25,7 @@ Your GitHub app installation or your personal access token must have at least th
 ```yml
 - name: Convert project number to ID
   id: convert_project_number_to_id
-  uses: Beastslash/actions-get-project-id-from-number@v1.0.0
+  uses: Beastslash/actions-get-project-id-from-number@v1.0.1
   with:
     github-project-number: ${{ vars.ISSUES_SYNC_GITHUB_PROJECT_NUMBER }}
     github-app-id: ${{ vars.ISSUES_SYNC_GITHUB_APP_ID }}

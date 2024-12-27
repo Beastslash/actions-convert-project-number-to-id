@@ -33189,7 +33189,8 @@ try {
     const projectNumber = parseInt(_actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput("github-project-number", { required: true }), 10);
     const repositoryOwner = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput("github-repository-owner", { required: false }) ?? _actions_github__WEBPACK_IMPORTED_MODULE_1__.context.repo.owner;
     const repositoryName = _actions_core__WEBPACK_IMPORTED_MODULE_0__.getInput("github-repository-name", { required: false }) ?? _actions_github__WEBPACK_IMPORTED_MODULE_1__.context.repo.repo;
-    console.log(_actions_github__WEBPACK_IMPORTED_MODULE_1__.context.repo);
+    console.log(repositoryOwner);
+    console.log(repositoryName);
     const response = await octokit.graphql(`
     query getProjectID($repositoryName: String!, $repositoryOwner: String!, $projectNumber: Int!) {
       repository(name: $repositoryName, owner: $repositoryOwner) {
